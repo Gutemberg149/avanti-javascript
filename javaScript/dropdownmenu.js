@@ -1,31 +1,46 @@
+// Get all elements
 const component1 = document.getElementById("component1");
-
-// O link q categoria
 const categoLink = document.getElementsByClassName("frame23830")[0];
-// A div dropdown categoria.
 const dropDownCategoria = document.getElementsByClassName("dropDownCategoria")[0];
-
-// O link q departamento
 const departamentoLinks = document.getElementsByClassName("categoriaDepartamento");
-// A div dropdown departamento.
-const dropDownDepartamento = document.getElementsByClassName("dropDownDepartamento")[0];
+const dropDownDepartamentos = document.getElementsByClassName("dropDownDepartamento");
 
-// -------------------Categoria dropDown menu-------------------
-categoLink.addEventListener("mouseover", function () {
-  dropDownCategoria.style.display = "flex";
-  dropDownDepartamento.style.display = "none";
+// Hide all dropdowns initially
+dropDownCategoria.style.display = "none";
+Array.from(dropDownDepartamentos).forEach((menu) => {
+  menu.style.display = "none";
 });
 
-// -------------------Departamento dropDown menu-------------------
-Array.from(departamentoLinks).forEach((element) => {
-  element.addEventListener("mouseover", function () {
-    dropDownDepartamento.style.display = "flex";
-    dropDownCategoria.style.display = "none";
+// ------------------- Main Category Dropdown -------------------
+categoLink.addEventListener("mouseover", function () {
+  // Show main category dropdown
+  dropDownCategoria.style.display = "flex";
+  // Hide all department dropdowns
+  Array.from(dropDownDepartamentos).forEach((menu) => {
+    menu.style.display = "none";
   });
 });
 
-// O menu desaparece quando o mouse sai do mennu ou dropDownCategoria menu-------
+// ------------------- Department Dropdowns -------------------
+Array.from(departamentoLinks).forEach((element, index) => {
+  element.addEventListener("mouseover", function () {
+    // Hide main category dropdown
+    dropDownCategoria.style.display = "none";
+    // Hide all department dropdowns first
+    Array.from(dropDownDepartamentos).forEach((menu) => {
+      menu.style.display = "none";
+    });
+    // Show only the hovered department dropdown
+    if (dropDownDepartamentos[index]) {
+      dropDownDepartamentos[index].style.display = "flex";
+    }
+  });
+});
+
+// ------------------- Hide All When Leaving Component -------------------
 component1.addEventListener("mouseleave", function () {
   dropDownCategoria.style.display = "none";
-  dropDownDepartamento.style.display = "none";
+  Array.from(dropDownDepartamentos).forEach((menu) => {
+    menu.style.display = "none";
+  });
 });

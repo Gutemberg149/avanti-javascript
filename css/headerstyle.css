@@ -286,11 +286,11 @@ header #component1 #homeMenu ul .frame23830 .group19319 .linha233 {
   margin-top: 2px;
 }
 
-header #component1 #homeMenu ul .frame23830:has(.verTodasAsCatgorias:hover) .verTodasAsCatgorias {
+header #component1 #homeMenu ul .frame23830:hover .verTodasAsCatgorias {
   color: var(--cor-primaria-azul);
 }
 
-header #component1 #homeMenu ul .frame23830:has(.verTodasAsCatgorias:hover) .group19319 .linha233 {
+header #component1 #homeMenu ul .frame23830:hover .group19319 .linha233 {
   border-bottom: var(--cor-primaria-azul) 2px solid;
 }
 
@@ -307,6 +307,10 @@ ul .categoriaDepartamento a {
   cursor: pointer;
 }
 
+ul .categoriaDepartamento:hover {
+  color: var(--cor-primaria-azul);
+}
+
 header #component1 #homeMenu ul li:hover > a {
   color: var(--cor-primaria-azul);
 }
@@ -316,6 +320,7 @@ header #component1 #homeMenu ul li:hover > a {
 header #component1 #homeMenu .retangolo451 {
   position: absolute;
   top: 140px;
+  left: 80px;
   width: 1265px;
   height: 329px;
   display: flex;
@@ -407,13 +412,14 @@ header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 a {
   font-weight: 400;
   width: 61px;
   color: var(--cor-texto-grey);
+  cursor: pointer;
 }
 
 header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 a:hover {
   color: var(--cor-primaria-azul);
 }
 
-/* Aqui é para conficurar o dispaly dropdown deparatamento ele so aparece quando ouver hover no menu */
+/* Aqui é para configurar o display dropdown deparatamento. Ele só aparece quando houver hover no menu */
 header #component1 #homeMenu .dropDownDepartamento {
   display: none;
 }
