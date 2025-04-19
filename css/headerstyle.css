@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: default;
+}
+
+:root {
+  --cor-primaria-azul: #005cff; /* Azul */
+  --cor-texto-branco: #ffffff;
+  --cor-texto-preto: #000000;
+  --cor-texto-grey: #656565;
+  --cor-border--mediumgrey: #dddddd;
+  --cor-border--button-text: #303030;
+  --cor-background-grey: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-border--button-text);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+header #frame1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-primaria-azul);
+  width: 100%;
+  height: 3vh;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 14px;
+  color: var(--cor-texto-branco);
+  letter-spacing: 0%;
+}
+
+header #frame1 p :nth-child(1) {
+  width: 63px;
+  height: 16px;
+  top: 7px;
+  left: 732px;
+  border-radius: 4px;
+  padding: 0 5px;
+  background-color: #6220c1;
+}
+
+header #frame1 p :nth-child(2) {
+  font-style: italic;
+  font-weight: 400;
+}
+
+header #component1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 118px;
+  width: 100%;
+  background-color: var(--cor-texto-branco);
+  box-shadow: rgba(0, 0, 0, 0.095) 0px 10px 15px -3px, rgba(0, 0, 0, 0.071) 0px 4px 6px -2px;
+}
+
+header #component1 .logo {
+  width: 152.57px;
+}
+
+/* Esse container so aparece no mobile */
+header #component1 .containerCartsmallScreen {
+  display: none;
+}
+
+header #component1 .contentTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  width: 1261px;
+  margin: 0;
+}
+
+header #component1 .menuBurger01 {
+  display: none;
+}
+
+header #component1 .contentTop .grupo17926 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 595px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--cor-border--mediumgrey);
+}
+
+header #component1 .contentTop .grupo17926 input[type="text"] {
+  width: 524px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--cor-texto-preto);
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+header #component1 .contentTop .grupo17926 input[type="text"]::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--cor-texto-preto);
+}
+
+header #component1 .contentTop .grupo17926 input[type="text"]:focus::placeholder {
+  opacity: 0;
+}
+
+header #component1 .contentTop .grupo17926 .frameLupa {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 16px;
+  width: 70px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+header #component1 .contentTop .grupo17926 .frameLupa img {
+  width: 18px;
+  cursor: pointer;
+}
+
+header #component1 .contentTop .grupo17926 .frameLupa:hover > img {
+  transform: scale(1.3);
+}
+
+header #component1 .contentTop .grupo17926 .productSearched {
+  position: absolute;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  border: 1px solid var(--cor-border--mediumgrey);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: white 2px solid;
+  background-color: var(--cor-texto-branco);
+  font-size: 16px;
+}
+
+/* codico para estilizar o span que foi definido no searchContent.js */
+.spanSearch {
+  font-weight: 700;
+  color: var(--cor-texto-preto);
+}
+
+header #component1 .contentTop .frame44 .grupo19041 {
+  display: flex;
+  width: 115.6;
+}
+
+header #component1 .contentTop .frame44 {
+  display: flex;
+  width: 165px;
+  height: 28px;
+}
+
+.grupo19041 .group19210 {
+  width: 20.57px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+header #component1 .contentTop .frame44 .grupo19041 .group10326 {
+  width: 99px;
+  height: 28px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  line-height: 14px;
+}
+
+header #component1 .contentTop .frame44 .frame50 {
+  position: relative;
+}
+
+/* Contagem de itens no carrinho */
+.group19216 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  background-color: var(--cor-primaria-azul);
+  color: var(--cor-texto-branco);
+}
+
+header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCartBody {
+  display: flex;
+  width: 24.74px;
+  height: 16.46px;
+  height: fit-content;
+}
+
+header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCartWheels {
+  display: flex;
+  justify-content: space-around;
+  width: 15px;
+  height: 7px;
+  margin-right: 3px;
+  padding: 0;
+}
+
+header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCartWheels img {
+  width: 6.68px;
+  height: 6.68px;
+  margin: 0;
+}
+
+header #component1 #homeMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22px;
+  width: 1261px;
+}
+
+header #component1 #homeMenu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header #component1 #homeMenu ul .frame23830 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 152px;
+  cursor: pointer;
+}
+
+header #component1 #homeMenu ul .frame23830 .verTodasAsCatgorias {
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header #component1 #homeMenu ul .frame23830 .group19319 {
+  width: 14px;
+  height: 15px;
+}
+
+header #component1 #homeMenu ul .frame23830 .group19319 .linha233 {
+  width: 14px;
+  border-bottom: #000000 2px solid;
+  margin-top: 2px;
+}
+
+header #component1 #homeMenu ul .frame23830:has(.verTodasAsCatgorias:hover) .verTodasAsCatgorias {
+  color: var(--cor-primaria-azul);
+}
+
+header #component1 #homeMenu ul .frame23830:has(.verTodasAsCatgorias:hover) .group19319 .linha233 {
+  border-bottom: var(--cor-primaria-azul) 2px solid;
+}
+
+header #component1 #homeMenu ul .categoriaDepartamento {
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+ul .categoriaDepartamento a {
+  cursor: pointer;
+}
+
+header #component1 #homeMenu ul li:hover > a {
+  color: var(--cor-primaria-azul);
+}
+
+/* --------------------------Drop down menu--------------------------------- */
+
+header #component1 #homeMenu .retangolo451 {
+  position: absolute;
+  top: 140px;
+  width: 1265px;
+  height: 329px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor-texto-branco);
+  box-shadow: rgba(0, 0, 0, 0.151) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+}
+
+/* Aqui é para fazer com o que o dropdown categoraia menu fique invisivel ele so aparece quando tiver hover no menu. */
+header #component1 #homeMenu .dropDownCategoria {
+  display: none;
+}
+
+header #component1 #homeMenu .retangolo451 .retangolo452 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 234px;
+  height: 329px;
+  background-color: var(--cor-background-grey);
+}
+
+header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 {
+  width: 190.68px;
+  height: 298px;
+  overflow: scroll;
+  padding-left: 10px;
+}
+
+/* Codigo para afinar a barra de rolagem   */
+header #component1 #homeMenu .retangolo451 .retangolo452 .group23831::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Codigo para afinar a barra de rolagem   */
+header #component1 #homeMenu .retangolo451 .retangolo452 .group23831::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 4px;
+}
+
+header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 29px;
+}
+
+header #component1 #homeMenu .retangolo451 .retangolo452 .frame23832 .textDropDown {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--cor-texto-grey);
+  cursor: pointer;
+}
+
+header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832 .fa-chevron-right {
+  font-size: 10px;
+  text-align: end;
+}
+
+header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832:hover > .textDropDown {
+  color: var(--cor-primaria-azul);
+}
+
+header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832:hover > .fa-chevron-right {
+  color: var(--cor-primaria-azul);
+}
+
+header #component1 #homeMenu .retangolo451 .containerFrame832 {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  height: 100%;
+  width: 35%;
+  padding-top: 20px;
+}
+
+header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 63px;
+  height: 236px;
+}
+
+header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 a {
+  font-size: 14px;
+  font-weight: 400;
+  width: 61px;
+  color: var(--cor-texto-grey);
+}
+
+header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 a:hover {
+  color: var(--cor-primaria-azul);
+}
+
+/* Aqui é para conficurar o dispaly dropdown deparatamento ele so aparece quando ouver hover no menu */
+header #component1 #homeMenu .dropDownDepartamento {
+  display: none;
+}
+
+header #component1 #homeMenu .dropDownDepartamento .containerFrame832 {
+  padding-top: 4rem;
+  padding-left: 16px;
+  justify-content: space-between;
+}
+
+header #component1 #homeMenu .dropDownDepartamento .departTitle {
+  position: absolute;
+  font-size: 16px;
+  color: var(--cor-texto-preto);
+  top: 19px;
+  left: 16px;
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 40%;
+  height: 298px;
+  padding-top: 20px;
+  margin-right: 18px;
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 .group18846 {
+  position: relative;
+  width: 236px;
+  height: 298px;
+  background-image: url(../image/imgNav/imgdropdownMenu/blackmug.png);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 .group18846 .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.693), rgba(0, 0, 0, 0.232));
+  z-index: 80;
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 127.43px;
+  height: 207.11px;
+  top: 43.89px;
+  left: 27px;
+  z-index: 90;
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--cor-texto-branco);
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 p .spanDropDown01 {
+  font-weight: 600;
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 116px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--cor-texto-branco);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cor-texto-branco);
+}
+
+/* -----------------------------------Media query---------------------------------------- */
+
+@media (max-width: 390px) {
+  header {
+    width: 390px;
+    background-color: #ffffff;
+  }
+
+  header #frame1 {
+    height: 52px;
+    text-align: center;
+  }
+
+  header #component1 .contentTop {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding: 0px;
+    height: 184px;
+    margin: 0;
+    padding-top: 20px;
+    width: 390px;
+  }
+
+  header #component1 .menuBurger01 {
+    display: block;
+    width: 23.72px;
+  }
+
+  header #component1 .logo {
+    width: 148.07px;
+  }
+
+  header #component1 .containerCartsmallScreen {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header #component1 .containerCartsmallScreen .cartMenuSmallScreen {
+    width: 25.04px;
+  }
+
+  header #component1 .contentTop .grupo17926 .productSearched {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  header #component1 .contentTop .grupo17926 {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 361px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--cor-texto-branco);
+    border: 1px solid var(--cor-border--mediumgrey);
+  }
+
+  header #component1 .contentTop .frame44 {
+    display: none;
+  }
+
+  header #component1 #homeMenu {
+    display: none;
+  }
+}
