@@ -25,6 +25,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
+  background-color: #ffffff;
 }
 
 header #frame1 {
@@ -250,6 +251,7 @@ header #component1 #homeMenu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--cor-texto-branco);
   height: 22px;
   width: 1261px;
 }
@@ -300,10 +302,9 @@ header #component1 #homeMenu ul .categoriaDepartamento {
   font-size: 14px;
   font-weight: 400px;
   line-height: 22px;
-  cursor: pointer;
 }
 
-ul .categoriaDepartamento a {
+ul .categoriaDepartamento p {
   cursor: pointer;
 }
 
@@ -328,11 +329,6 @@ header #component1 #homeMenu .retangolo451 {
   justify-content: space-between;
   background-color: var(--cor-texto-branco);
   box-shadow: rgba(0, 0, 0, 0.151) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
-}
-
-/* Aqui é para fazer com o que o dropdown categoraia menu fique invisivel ele so aparece quando tiver hover no menu. */
-header #component1 #homeMenu .dropDownCategoria {
-  display: none;
 }
 
 header #component1 #homeMenu .retangolo451 .retangolo452 {
@@ -382,12 +378,13 @@ header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832
   text-align: end;
 }
 
-header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832:hover > .textDropDown {
-  color: var(--cor-primaria-azul);
-}
-
-header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832:hover > .fa-chevron-right {
-  color: var(--cor-primaria-azul);
+.containerConteuCategorias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
 
 header #component1 #homeMenu .retangolo451 .containerFrame832 {
@@ -395,8 +392,7 @@ header #component1 #homeMenu .retangolo451 .containerFrame832 {
   justify-content: space-around;
   align-items: start;
   height: 100%;
-  width: 35%;
-  padding-top: 20px;
+  width: 45%;
 }
 
 header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 {
@@ -501,6 +497,12 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18
   font-size: 12px;
   font-weight: 700;
   color: var(--cor-texto-branco);
+  cursor: pointer;
+}
+
+header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 button:hover {
+  background-color: #ffffffa1;
+  color: black;
 }
 
 /* -----------------------------------Media query---------------------------------------- */
@@ -516,6 +518,10 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18
     text-align: center;
   }
 
+  header #component1 {
+    align-items: start;
+  }
+
   header #component1 .contentTop {
     display: flex;
     align-items: start;
@@ -527,9 +533,13 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18
     width: 390px;
   }
 
-  header #component1 .menuBurger01 {
+  header #component1 .contentTop .menuBurger01 {
     display: block;
-    width: 23.72px;
+    font-size: 28px;
+  }
+  header #component1 .contentTop .menuBurger01Closed {
+    display: none;
+    font-size: 28px;
   }
 
   header #component1 .logo {
@@ -568,8 +578,27 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18
   header #component1 .contentTop .frame44 {
     display: none;
   }
-
+  /* ----------------Menu onde os departramentos estão-------------------------- */
   header #component1 #homeMenu {
+    margin-top: 70px;
+    height: fit-content;
+    padding: 10px 0 0 0;
+    width: 160px;
+    transform: translateX(-160px);
+    transition: 0.4s ease-in-out all;
+  }
+
+  header #component1 #homeMenu ul {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+  }
+
+  header #component1 #homeMenu ul li {
+    margin-bottom: 10px;
+  }
+  /* Para esconder o burger menu */
+  header #component1 #homeMenu ul li .group19319 {
     display: none;
   }
 }

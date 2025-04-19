@@ -30,8 +30,10 @@
         <nav id="component1">
             <!-- Parte da nav onde estar a área do search -->
             <div class="contentTop">
-                <!-- Imagem do menu de busca e o carrinho apenas para mobile -->
-                <img class="menuBurger01" src="./image/imgNav/grupo19319.png" alt="simbolo do menu">
+
+                <!-- Imagem do menu de busca  apenas para mobile -->
+                <i class="fa-solid fa-bars menuBurger01"></i>
+                <i class="fa-solid fa-x menuBurger01Closed"></i>
 
                 <img class="logo" src="./image/imgNav/logo.png" alt="Imagem do logo do site.">
 
@@ -87,7 +89,7 @@
             <div id="homeMenu">
 
                 <ul>
-
+                    <!-- Primeiro li estão "Todas as Categorias" -->
                     <li class="frame23830">
                         <!-- Burger menu -->
                         <div class="group19319">
@@ -95,12 +97,15 @@
                             <div class="linha233"></div>
                             <div class="linha233"></div>
                         </div>
+
                         <p class="verTodasAsCatgorias">
                             Todas as Categorias
                         </p>
+
                         <!--Primeiro  dropdownmenu "Todas as Categorias"-->
                         <div class="dropDownCategoria retangolo451">
 
+                            <!-- Primeira parte é o container a esquerda com os "Departamentos" -->
                             <div class="retangolo452">
                                 <div class="group23831">
 
@@ -148,22 +153,27 @@
                                         <p class="textDropDown">Departamento</p>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
+
                                     <div class="frame23832">
                                         <p class="textDropDown">Departamento</p>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
+
                                     <div class="frame23832">
                                         <p class="textDropDown">Departamento</p>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
+
                                     <div class="frame23832">
                                         <p class="textDropDown">Departamento</p>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
+
                                     <div class="frame23832">
                                         <p class="textDropDown">Departamento</p>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
+
                                     <div class="frame23832">
                                         <p class="textDropDown">Departamento</p>
                                         <i class="fas fa-chevron-right"></i>
@@ -171,51 +181,512 @@
                                 </div>
                             </div>
 
-                            <div class="containerFrame832">
-                                <div class="frame832">
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                </div>
-
-                                <div class="frame832">
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                </div>
-
-                                <div class="frame832">
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                    <a href="#">Categoria</a>
-                                </div>
-                            </div>
-
-                            <div class="group21641">
-                                <div class="group18846">
-                                    <div class="overlay"></div>
-                                    <div class="innerGroup18846">
-                                        <p>Confira os Produtos<span class="spanDropDown01">Que Acabaram de Chegar</span>
-                                        </p>
-                                        <button class="group18926">VER TODOS</button>
-
+                            <!-- Esse container abaixo é parte da direita onde estão todos os containers referente a cada "Departamento", tomei a liberdade de marca cada um com número para poder perceber a diferença. -->
+                            <div class="containerConteuCategorias">
+                                <!-- A classe categoriasShow é usada no javascript para mostra ou esconder essa div.  containerFrame832 foi usada no css para fazer estilização para esse a div nesse li e todos os outros abaixo. -->
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria1</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
                                     </div>
 
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria2</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria3</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria4</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria5</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria6</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria7</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria8</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria9</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria10</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria11</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria12</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria13</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <div class="containerFrame832 categoriasShow">
+                                    <div class="frame832">
+                                        <a href="#">Categoria14</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+
+                                    <div class="frame832">
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                        <a href="#">Categoria</a>
+                                    </div>
+                                </div>
+
+                                <!-- Imagem na direita do menu com mensagem -->
+                                <div class="group21641">
+                                    <div class="group18846">
+                                        <div class="overlay"></div>
+                                        <div class="innerGroup18846">
+                                            <p>Confira os Produtos<span class="spanDropDown01">Que Acabaram de
+                                                    Chegar</span>
+                                            </p>
+                                            <button class="group18926">VER TODOS</button>
+
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
 
@@ -223,7 +694,7 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <a href="#">Departamento</a>
+                        <p>Departamento</p>
                         <div class="dropDownDepartamento retangolo451">
 
                             <h4 class="departTitle">Departamento</h4>
@@ -271,7 +742,7 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button class="group18926">VER TODOS</button>
+                                        <button>VER TODOS</button>
 
                                     </div>
 
@@ -282,7 +753,7 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <a href="#">Departamento</a>
+                        <p>Departamento</p>
                         <div class="dropDownDepartamento retangolo451">
 
                             <h4 class="departTitle">Departamento</h4>
@@ -341,7 +812,7 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <a href="#">Departamento</a>
+                        <p>Departamento</p>
                         <div class="dropDownDepartamento retangolo451">
 
                             <h4 class="departTitle">Departamento</h4>
@@ -400,7 +871,7 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <a href="#">Departamento</a>
+                        <p>Departamento</p>
                         <div class="dropDownDepartamento retangolo451">
 
                             <h4 class="departTitle">Departamento</h4>
@@ -459,7 +930,7 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <a href="#">Departamento</a>
+                        <p>Departamento</p>
                         <div class="dropDownDepartamento retangolo451">
 
                             <h4 class="departTitle">Departamento</h4>
@@ -518,7 +989,7 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <a href="#">Departamento</a>
+                        <p>Departamento</p>
                         <div class="dropDownDepartamento retangolo451">
 
                             <h4 class="departTitle">Departamento</h4>
@@ -577,7 +1048,7 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <a href="#">Departamento</a>
+                        <p>Departamento</p>
                         <div class="dropDownDepartamento retangolo451">
 
                             <h4 class="departTitle">Departamento</h4>
