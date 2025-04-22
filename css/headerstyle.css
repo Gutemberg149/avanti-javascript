@@ -27,7 +27,7 @@ header {
   z-index: 100;
   background-color: #ffffff;
 }
-
+/* --------------------Banner azul no topo da pagína-------------------------------- */
 header #frame1 {
   display: flex;
   align-items: center;
@@ -57,6 +57,19 @@ header #frame1 p :nth-child(2) {
   font-weight: 400;
 }
 
+@media (max-width: 390px) {
+  header {
+    width: 390px;
+    background-color: #ffffff;
+  }
+
+  header #frame1 {
+    height: 52px;
+    text-align: center;
+  }
+}
+
+/* --------------------Primeira parte da NAV - Onde o estar o input Search-------------------------------- */
 header #component1 {
   display: flex;
   flex-direction: column;
@@ -247,6 +260,70 @@ header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCar
   margin: 0;
 }
 
+@media (max-width: 390px) {
+  header #component1 {
+    align-items: start;
+  }
+
+  header #component1 .contentTop {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding: 0px;
+    height: 184px;
+    margin: 0;
+    padding-top: 20px;
+    width: 390px;
+  }
+
+  header #component1 .contentTop .menuBurger01 {
+    display: block;
+    font-size: 28px;
+  }
+  header #component1 .contentTop .iconMenuClose {
+    display: none;
+    font-size: 28px;
+  }
+
+  header #component1 .logo {
+    width: 148.07px;
+  }
+
+  header #component1 .containerCartsmallScreen {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header #component1 .containerCartsmallScreen .cartMenuSmallScreen {
+    width: 25.04px;
+  }
+
+  header #component1 .contentTop .grupo17926 .productSearched {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  header #component1 .contentTop .grupo17926 {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 361px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--cor-texto-branco);
+    border: 1px solid var(--cor-border--mediumgrey);
+  }
+
+  header #component1 .contentTop .frame44 {
+    display: none;
+  }
+}
+
+/* --------------------Segunda parte da NAV -------------------------------- */
 header #component1 #homeMenu {
   display: flex;
   align-items: center;
@@ -316,7 +393,7 @@ header #component1 #homeMenu ul li:hover > a {
   color: var(--cor-primaria-azul);
 }
 
-/* --------------------------Drop down menu--------------------------------- */
+/* --------------------------Dropdown menu--------------------------------- */
 
 header #component1 #homeMenu .retangolo451 {
   position: absolute;
@@ -348,14 +425,9 @@ header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 {
 }
 
 /* Codigo para afinar a barra de rolagem   */
-header #component1 #homeMenu .retangolo451 .retangolo452 .group23831::-webkit-scrollbar {
-  width: 3px;
-}
-
-/* Codigo para afinar a barra de rolagem   */
 header #component1 #homeMenu .retangolo451 .retangolo452 .group23831::-webkit-scrollbar-thumb {
   background-color: darkgray;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832 {
@@ -376,15 +448,18 @@ header #component1 #homeMenu .retangolo451 .retangolo452 .frame23832 .textDropDo
 header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832 .fa-chevron-right {
   font-size: 10px;
   text-align: end;
+  color: var(--cor-texto-grey);
+  margin-right: 3px;
 }
 
-.containerConteuCategorias {
+.containerConteudoCategorias {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100%;
   padding: 1rem;
+  background-color: #ffffff;
 }
 
 header #component1 #homeMenu .retangolo451 .containerFrame832 {
@@ -415,18 +490,19 @@ header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 a:hover 
   color: var(--cor-primaria-azul);
 }
 
-/* Aqui é para configurar o display dropdown deparatamento. Ele só aparece quando houver hover no menu */
+/* Aqui é para configurar o display dropdown deparatamento. Ele só aparece quando houver Hover no menu */
 header #component1 #homeMenu .dropDownDepartamento {
   display: none;
 }
 
+/*Aqui é para apenas o segundo "li"*/
 header #component1 #homeMenu .dropDownDepartamento .containerFrame832 {
   padding-top: 4rem;
   padding-left: 16px;
   justify-content: space-between;
 }
 
-header #component1 #homeMenu .dropDownDepartamento .departTitle {
+.departTitle {
   position: absolute;
   font-size: 16px;
   color: var(--cor-texto-preto);
@@ -434,7 +510,7 @@ header #component1 #homeMenu .dropDownDepartamento .departTitle {
   left: 16px;
 }
 
-header #component1 #homeMenu .retangolo451 .group21641 {
+.group21641 {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -444,7 +520,7 @@ header #component1 #homeMenu .retangolo451 .group21641 {
   margin-right: 18px;
 }
 
-header #component1 #homeMenu .retangolo451 .group21641 .group18846 {
+.group21641 .group18846 {
   position: relative;
   width: 236px;
   height: 298px;
@@ -461,7 +537,7 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .overlay {
   z-index: 80;
 }
 
-header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 {
+.group21641 .group18846 .innerGroup18846 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -473,18 +549,18 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18
   z-index: 90;
 }
 
-header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 p {
+.group21641 .group18846 .innerGroup18846 p {
   font-size: 24px;
   font-weight: 400;
   line-height: 27px;
   color: var(--cor-texto-branco);
 }
 
-header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 p .spanDropDown01 {
+.group21641 .group18846 .innerGroup18846 p .spanDropDown01 {
   font-weight: 600;
 }
 
-header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 button {
+.group21641 .group18846 .innerGroup18846 button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -500,90 +576,18 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18
   cursor: pointer;
 }
 
-header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18846 button:hover {
+.group21641 .group18846 .innerGroup18846 button:hover {
   background-color: #ffffffa1;
   color: black;
 }
 
-/* -----------------------------------Media query---------------------------------------- */
-
 @media (max-width: 390px) {
-  header {
-    width: 390px;
-    background-color: #ffffff;
-  }
-
-  header #frame1 {
-    height: 52px;
-    text-align: center;
-  }
-
-  header #component1 {
-    align-items: start;
-  }
-
-  header #component1 .contentTop {
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-    padding: 0px;
-    height: 184px;
-    margin: 0;
-    padding-top: 20px;
-    width: 390px;
-  }
-
-  header #component1 .contentTop .menuBurger01 {
-    display: block;
-    font-size: 28px;
-  }
-  header #component1 .contentTop .menuBurger01Closed {
-    display: none;
-    font-size: 28px;
-  }
-
-  header #component1 .logo {
-    width: 148.07px;
-  }
-
-  header #component1 .containerCartsmallScreen {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  header #component1 .containerCartsmallScreen .cartMenuSmallScreen {
-    width: 25.04px;
-  }
-
-  header #component1 .contentTop .grupo17926 .productSearched {
-    width: 80%;
-    font-size: 14px;
-  }
-
-  header #component1 .contentTop .grupo17926 {
-    position: absolute;
-    top: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 361px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: var(--cor-texto-branco);
-    border: 1px solid var(--cor-border--mediumgrey);
-  }
-
-  header #component1 .contentTop .frame44 {
-    display: none;
-  }
-  /* ----------------Menu onde os departramentos estão-------------------------- */
   header #component1 #homeMenu {
     margin-top: 70px;
     height: fit-content;
     padding: 10px 0 0 0;
-    width: 160px;
+    width: 110px;
+    box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
     transform: translateX(-160px);
     transition: 0.4s ease-in-out all;
   }
@@ -597,8 +601,107 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .innerGroup18
   header #component1 #homeMenu ul li {
     margin-bottom: 10px;
   }
+
+  header #component1 #homeMenu ul li p {
+    font-size: 12px;
+  }
+
+  header #component1 #homeMenu ul .frame23830 .verTodasAsCatgorias {
+    font-size: 12px;
+    width: 50px;
+  }
+
   /* Para esconder o burger menu */
   header #component1 #homeMenu ul li .group19319 {
     display: none;
+  }
+
+  header #component1 #homeMenu .retangolo451 {
+    top: 0px;
+    left: 110px;
+    width: 280px;
+    height: 276px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.261) 2.4px 2.4px 3.2px;
+    border-left: 0.5px solid rgb(177, 177, 177);
+  }
+
+  header #component1 #homeMenu .retangolo451 .retangolo452 {
+    width: 95px;
+    height: 100%;
+  }
+
+  header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 {
+    width: 190px;
+    height: 260px;
+    padding-left: 3px;
+  }
+
+  .containerConteudoCategorias {
+    align-items: end;
+    width: 170px;
+    padding: 0rem;
+    padding-right: 0px;
+    margin-right: 15px;
+  }
+
+  #component1 #homeMenu .frame23830 .retangolo451 .group23831 .frame23832 .textDropDown {
+    font-size: 10px;
+  }
+  header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832 .fa-chevron-right {
+    font-size: 8px;
+  }
+
+  header #component1 #homeMenu .retangolo451 .containerFrame832 {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 260px;
+    width: 180px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 {
+    width: 33px;
+  }
+
+  header #component1 #homeMenu .retangolo451 .containerFrame832 .frame832 a {
+    font-size: 10px;
+  }
+  .group21641 {
+    display: none;
+  }
+
+  /*--------Segundo "li"em diante, os "Departamentos" com so as categoria dendro----------*/
+
+  .dropDownDepartamento {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 100%;
+  }
+
+  .departTitle {
+    font-size: 13px;
+    top: 9px;
+  }
+
+  header #component1 #homeMenu .categoriaDepartamento .retangolo451 .containerFrame832 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 16px;
+    justify-content: space-between;
+  }
+
+  header #component1 #homeMenu .categoriaDepartamento .retangolo451 .containerFrame832 .frame832 {
+    height: 210px;
+    margin: 0;
   }
 }

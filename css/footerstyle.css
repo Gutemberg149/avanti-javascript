@@ -141,6 +141,10 @@ footer .footerRetangulo .group10397 {
   height: 24px;
 }
 
+.fa-chevron-down {
+  display: none;
+}
+
 @media (max-width: 390px) {
   footer .footerRetangulo .group17 {
     display: flex;
@@ -189,12 +193,13 @@ footer .footerRetangulo .group10397 {
   }
 
   .fa-chevron-down {
+    display: block;
     color: var(--cor-primaria-azul);
     transition: 0.3s ease-in-out all;
   }
 
   footer .footerRetangulo .group17 .ulAccordion .accordion-title.active .fa-chevron-down {
-    transform: rotate(-90deg);
+    transform: rotate(-180deg);
   }
 
   .accordion-content {
