@@ -311,7 +311,7 @@ main {
   padding-left: 8px;
 }
 
-.sectionCarrossel .group23821 .group1 button {
+.sectionCarrossel .group23821 .group1 a {
   background-color: var(--cor-texto-branco);
   border: none;
   font-size: 14px;
@@ -455,7 +455,7 @@ main {
   color: var(--cor-border--button-text);
 }
 
-.sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonMedium {
+.sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonCompra {
   width: 222px;
   height: 40px;
   border-radius: 8px;
@@ -467,9 +467,36 @@ main {
   color: var(--cor-texto-branco);
   margin-top: 5px;
   cursor: pointer;
+  display: block;
 }
 
-.sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonMedium:hover {
+.sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonAddProduct {
+  width: 222px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  border: 1px solid green;
+  background-color: var(--cor-texto-branco);
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  margin-top: 5px;
+  display: none;
+}
+.fa-minus,
+.fa-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  /* background-color: lightblue; */
+  cursor: pointer;
+}
+
+.sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonCompra:hover {
   background-color: #0851ce;
   color: white;
 }
@@ -570,7 +597,11 @@ main {
     height: 158px;
   }
 
-  .sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonMedium {
+  .sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonCompra {
+    width: 148px;
+    height: 40px;
+  }
+  .sectionCarrossel .group23821 .frame12 .innerFrame12 .group19227 .buttonAddProduct {
     width: 148px;
     height: 40px;
   }
@@ -592,14 +623,14 @@ main {
 }
 
 /* ---------------------------------Beggining of section 03 Primeiro banner---------------------------------------- */
-.sectionBanner01 {
+.sectionBanner02 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 55px;
 }
 
-.sectionBanner01 .primeiroBanner {
+.sectionBanner02 .segundoBanner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -607,7 +638,7 @@ main {
   height: 747px;
 }
 
-.sectionBanner01 .primeiroBanner .imgContainer {
+.sectionBanner02 .segundoBanner .imgContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -616,12 +647,12 @@ main {
   background-color: #c2c2c2;
 }
 
-.sectionBanner01 .primeiroBanner .imgContainer img {
+.sectionBanner02 .segundoBanner .imgContainer img {
   width: 523.38px;
   height: 528.17px;
 }
 
-.sectionBanner01 .primeiroBanner .texto {
+.sectionBanner02 .segundoBanner .texto {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -630,7 +661,7 @@ main {
   height: 536px;
 }
 
-.sectionBanner01 .primeiroBanner .texto h3 {
+.sectionBanner02 .segundoBanner .texto h3 {
   font-family: "Nunito", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -639,7 +670,7 @@ main {
   width: 487px;
 }
 
-.sectionBanner01 .primeiroBanner .texto p {
+.sectionBanner02 .segundoBanner .texto p {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -648,7 +679,7 @@ main {
   color: var(--cor-texto-preto);
 }
 
-.sectionBanner01 .primeiroBanner .texto.textoP1 {
+.sectionBanner02 .segundoBanner .texto.textoP1 {
   margin-bottom: 10px;
 }
 
@@ -669,42 +700,42 @@ main {
     display: block;
   }
 
-  .sectionBanner01 {
+  .sectionBanner02 {
     margin-top: 56px;
     margin-bottom: 5px;
   }
 
-  .sectionBanner01 .primeiroBanner {
+  .sectionBanner02 .segundoBanner {
     flex-direction: column;
     width: 390px;
     height: 700px;
   }
 
-  .sectionBanner01 .primeiroBanner .imgContainer {
+  .sectionBanner02 .segundoBanner .imgContainer {
     width: 100%;
     height: 390px;
   }
 
-  .sectionBanner01 .primeiroBanner .imgContainer img {
+  .sectionBanner02 .segundoBanner .imgContainer img {
     width: 390px;
     height: 390px;
   }
-  .sectionBanner01 .primeiroBanner .texto {
+  .sectionBanner02 .segundoBanner .texto {
     width: 343px;
     height: 266px;
   }
 
-  .sectionBanner01 .primeiroBanner .texto h3 {
+  .sectionBanner02 .segundoBanner .texto h3 {
     font-size: 24px;
     width: 100%;
   }
 
-  .sectionBanner01 .primeiroBanner .texto p {
+  .sectionBanner02 .segundoBanner .texto p {
     font-size: 14px;
     letter-spacing: 5%;
   }
 
-  .sectionBanner01 .primeiroBanner .texto.textoP1 {
+  .sectionBanner02 .segundoBanner .texto.textoP1 {
     margin-bottom: 10px;
   }
 }

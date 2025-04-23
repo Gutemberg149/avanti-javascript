@@ -7,18 +7,18 @@
 }
 
 :root {
-  --cor-primaria-azul: #005cff; /* Azul */
+  --cor-primaria-azul: #005cff;
   --cor-texto-branco: #ffffff;
   --cor-texto-preto: #000000;
   --cor-texto-grey: #656565;
-  --cor-border--mediumgrey: #dddddd;
-  --cor-border--button-text: #303030;
+  --cor-border-mediumgrey: #dddddd;
+  --cor-border-button-text: #303030;
   --cor-background-grey: #f5f5f5;
 }
 
 a {
   text-decoration: none;
-  color: var(--cor-border--button-text);
+  color: var(--cor-border-button-text);
 }
 
 header {
@@ -85,11 +85,6 @@ header #component1 .logo {
   width: 152.57px;
 }
 
-/* Esse container so aparece no mobile */
-header #component1 .containerCartsmallScreen {
-  display: none;
-}
-
 header #component1 .contentTop {
   display: flex;
   align-items: center;
@@ -111,7 +106,7 @@ header #component1 .contentTop .grupo17926 {
   width: 595px;
   height: 40px;
   border-radius: 10px;
-  border: 1px solid var(--cor-border--mediumgrey);
+  border: 1px solid var(--cor-border-mediumgrey);
 }
 
 header #component1 .contentTop .grupo17926 input[type="text"] {
@@ -170,7 +165,7 @@ header #component1 .contentTop .grupo17926 .productSearched {
   align-items: center;
   justify-content: center;
   width: 90%;
-  border: 1px solid var(--cor-border--mediumgrey);
+  border: 1px solid var(--cor-border-mediumgrey);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: white 2px solid;
@@ -184,15 +179,15 @@ header #component1 .contentTop .grupo17926 .productSearched {
   color: var(--cor-texto-preto);
 }
 
-header #component1 .contentTop .frame44 .grupo19041 {
-  display: flex;
-  width: 115.6;
-}
-
 header #component1 .contentTop .frame44 {
   display: flex;
   width: 165px;
   height: 28px;
+}
+
+header #component1 .contentTop .frame44 .grupo19041 {
+  display: flex;
+  width: 115.6;
 }
 
 .grupo19041 .group19210 {
@@ -231,30 +226,14 @@ header #component1 .contentTop .frame44 .frame50 {
   color: var(--cor-texto-branco);
 }
 
-header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody {
+header #component1 .contentTop .frame44 .frame50 .cartBody {
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: center;
 }
 
-header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCartBody {
-  display: flex;
-  width: 24.74px;
-  height: 16.46px;
-  height: fit-content;
-}
-
-header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCartWheels {
-  display: flex;
-  justify-content: space-around;
-  width: 15px;
-  height: 7px;
-  margin-right: 3px;
-  padding: 0;
-}
-
-header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCartWheels img {
+header #component1 .contentTop .frame44 .frame50 .cartBody .vectorCartWheels img {
   width: 6.68px;
   height: 6.68px;
   margin: 0;
@@ -266,14 +245,14 @@ header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCar
   }
 
   header #component1 .contentTop {
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
     padding: 0px;
     height: 184px;
+    width: 390px;
     margin: 0;
     padding-top: 20px;
-    width: 390px;
+  }
+  header #component1 .contentTop .frame44 {
+    width: 35px;
   }
 
   header #component1 .contentTop .menuBurger01 {
@@ -287,17 +266,6 @@ header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCar
 
   header #component1 .logo {
     width: 148.07px;
-  }
-
-  header #component1 .containerCartsmallScreen {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  header #component1 .containerCartsmallScreen .cartMenuSmallScreen {
-    width: 25.04px;
   }
 
   header #component1 .contentTop .grupo17926 .productSearched {
@@ -315,10 +283,10 @@ header #component1 .contentTop .frame44 .frame50 .groupVectorCartBody .vectorCar
     height: 40px;
     border-radius: 10px;
     background-color: var(--cor-texto-branco);
-    border: 1px solid var(--cor-border--mediumgrey);
+    border: 1px solid var(--cor-border-mediumgrey);
   }
 
-  header #component1 .contentTop .frame44 {
+  header #component1 .contentTop .frame44 .grupo19041 {
     display: none;
   }
 }
@@ -381,11 +349,11 @@ header #component1 #homeMenu ul .categoriaDepartamento {
   line-height: 22px;
 }
 
-ul .categoriaDepartamento p {
+.categoriaDepartamento a {
   cursor: pointer;
 }
 
-ul .categoriaDepartamento:hover {
+.categoriaDepartamento:hover {
   color: var(--cor-primaria-azul);
 }
 
@@ -560,7 +528,7 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .overlay {
   font-weight: 600;
 }
 
-.group21641 .group18846 .innerGroup18846 button {
+.group21641 .group18846 .innerGroup18846 a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -576,7 +544,7 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .overlay {
   cursor: pointer;
 }
 
-.group21641 .group18846 .innerGroup18846 button:hover {
+.group21641 .group18846 .innerGroup18846 a:hover {
   background-color: #ffffffa1;
   color: black;
 }
@@ -647,7 +615,7 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .overlay {
     margin-right: 15px;
   }
 
-  #component1 #homeMenu .frame23830 .retangolo451 .group23831 .frame23832 .textDropDown {
+  header #component1 #homeMenu .retangolo451 .retangolo452 .frame23832 .textDropDown {
     font-size: 10px;
   }
   header #component1 #homeMenu .retangolo451 .retangolo452 .group23831 .frame23832 .fa-chevron-right {
@@ -687,6 +655,10 @@ header #component1 #homeMenu .retangolo451 .group21641 .group18846 .overlay {
   .departTitle {
     font-size: 13px;
     top: 9px;
+  }
+
+  header #component1 #homeMenu .categoriaDepartamento a {
+    font-size: 11px;
   }
 
   header #component1 #homeMenu .categoriaDepartamento .retangolo451 .containerFrame832 {

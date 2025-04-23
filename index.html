@@ -30,36 +30,30 @@
         <nav id="component1">
             <!-- Parte da NAV onde estar a área do search -->
             <div class="contentTop">
-                <!-- Imagem do menu de busca  apenas para mobile -->
+                <!-- Essas duas Imagens abaixo "<i></i>", são apenas para mobile -->
                 <i class="fa-solid fa-bars menuBurger01"></i>
                 <i class="fa-solid fa-x iconMenuClose"></i>
 
                 <img class="logo" src="./image/imgNav/logo.png" alt="Imagem do logo do site.">
 
-                <!--Container para o menu de busca e o carrinho apenas para mobile -->
-                <div class="containerCartsmallScreen">
-                    <div class="group19216">
-                        <p>2</p>
-                    </div>
-                    <img class="cartMenuSmallScreen" src="./image/imgNav/cartMenu.png" alt="icone do cart menu">
-                </div>
-
-                <!-- Componente de busca -->
-                <div class="grupo17926">
+                <!-- Componente de busca com input-->
+                <form class="grupo17926">
                     <input type="text" placeholder="Digite aqui o que você procura">
 
-                    <button type="submit" class="frameLupa">
+                    <button type="submit" class="frameLupa" aria-label="botão para mostrar produto procurado">
                         <img src="./image/imgNav/caminho20013.png" alt="Icone da lupa.">
                     </button>
-
+                    <!-- //Aqui mostra o produto procurado -->
                     <div class="productSearched">
                         <p class="resultOfSearch"></p>
                     </div>
 
-                </div>
+                </form>
 
-
+                <!-- parte esquerda do menu-topo -->
                 <div class="frame44">
+
+                    <!-- Aqui tem o icone person e irar o nome do cliente -->
                     <div class="grupo19041">
                         <div class="group19210">
                             <img src="./image/imgNav/noun-person-5551340.png" alt="Icone de uma possoa sexo masculino.">
@@ -70,12 +64,13 @@
                         </div>
                     </div>
 
+                    <!--Aqui é o carrinho com a quantidade total de produtos-->
                     <div class="frame50">
                         <div class="group19216">
-                            <p>2</p>
+                            <p id="qtdItemCart">0</p>
                         </div>
 
-                        <div class="groupVectorCartBody">
+                        <div class="cartBody">
                             <img src="./image/imgNav/cartmenu.png" alt="Parte superior do icon cart.">
                         </div>
 
@@ -97,9 +92,9 @@
                             <div class="linha233"></div>
                         </div>
 
-                        <p class="verTodasAsCatgorias">
+                        <a class="verTodasAsCatgorias">
                             Todas as Categorias
-                        </p>
+                        </a>
 
                         <!--Primeiro  dropdownmenu "Todas as Categorias"-->
                         <div class="dropDownCategoria retangolo451">
@@ -109,72 +104,72 @@
                                 <div class="group23831">
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
 
                                     <div class="frame23832">
-                                        <p class="textDropDown">Departamento</p>
+                                        <a class="textDropDown">Departamento</a>
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
                                 </div>
@@ -682,7 +677,8 @@
                                             <p>Confira os Produtos<span class="spanDropDown01">Que Acabaram de
                                                     Chegar</span>
                                             </p>
-                                            <button class="group18926">VER TODOS</button>
+                                            <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                                TODOS</a>
 
                                         </div>
 
@@ -695,11 +691,11 @@
 
                     <!-- Nesses seguintes li estão os "Departamentos" -->
                     <li class="categoriaDepartamento">
-                        <p>Departamento</p>
+                        <a>Departamento</a>
 
                         <div class="dropDownDepartamento retangolo451">
 
-                            <h4 class="departTitle">Departamento</h4>
+                            <a class="departTitle">Departamento</a>
 
                             <div class="containerFrame832">
                                 <div class="frame832">
@@ -744,7 +740,8 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button>VER TODOS</button>
+                                        <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                            TODOS</a>
 
                                     </div>
 
@@ -755,10 +752,10 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <p>Departamento</p>
+                        <a>Departamento</a>
                         <div class="dropDownDepartamento retangolo451">
 
-                            <h4 class="departTitle">Departamento</h4>
+                            <a class="departTitle">Departamento</a>
 
                             <div class="containerFrame832">
                                 <div class="frame832">
@@ -803,7 +800,8 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button class="group18926">VER TODOS</button>
+                                        <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                            TODOS</a>
 
                                     </div>
 
@@ -814,10 +812,10 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <p>Departamento</p>
+                        <a>Departamento</a>
                         <div class="dropDownDepartamento retangolo451">
 
-                            <h4 class="departTitle">Departamento</h4>
+                            <a class="departTitle">Departamento</a>
 
                             <div class="containerFrame832">
                                 <div class="frame832">
@@ -862,7 +860,8 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button class="group18926">VER TODOS</button>
+                                        <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                            TODOS</a>
 
                                     </div>
 
@@ -873,10 +872,10 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <p>Departamento</p>
+                        <a>Departamento</a>
                         <div class="dropDownDepartamento retangolo451">
 
-                            <h4 class="departTitle">Departamento</h4>
+                            <a class="departTitle">Departamento</a>
 
                             <div class="containerFrame832">
                                 <div class="frame832">
@@ -921,7 +920,8 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button class="group18926">VER TODOS</button>
+                                        <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                            TODOS</a>
 
                                     </div>
 
@@ -932,10 +932,10 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <p>Departamento</p>
+                        <a>Departamento</a>
                         <div class="dropDownDepartamento retangolo451">
 
-                            <h4 class="departTitle">Departamento</h4>
+                            <a class="departTitle">Departamento</a>
 
                             <div class="containerFrame832">
                                 <div class="frame832">
@@ -980,7 +980,8 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button class="group18926">VER TODOS</button>
+                                        <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                            TODOS</a>
 
                                     </div>
 
@@ -991,10 +992,10 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <p>Departamento</p>
+                        <a>Departamento</a>
                         <div class="dropDownDepartamento retangolo451">
 
-                            <h4 class="departTitle">Departamento</h4>
+                            <a class="departTitle">Departamento</a>
 
                             <div class="containerFrame832">
                                 <div class="frame832">
@@ -1039,7 +1040,8 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button class="group18926">VER TODOS</button>
+                                        <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                            TODOS</a>
 
                                     </div>
 
@@ -1050,10 +1052,10 @@
                     </li>
 
                     <li class="categoriaDepartamento">
-                        <p>Departamento</p>
+                        <a>Departamento</a>
                         <div class="dropDownDepartamento retangolo451">
 
-                            <h4 class="departTitle">Departamento</h4>
+                            <a class="departTitle">Departamento</a>
 
                             <div class="containerFrame832">
                                 <div class="frame832">
@@ -1098,7 +1100,8 @@
                                         <p> Confira os Produtos<span class="spanDropDown01"> Que Acabaram De
                                                 Chegar</span> </p>
 
-                                        <button class="group18926">VER TODOS</button>
+                                        <a href="#" class="group18926" aria-label="Link para info do produto">VER
+                                            TODOS</a>
 
                                     </div>
 
@@ -1116,29 +1119,32 @@
 
 
     <main>
+        <!-- Primeiro banner que toma formato de carrossel no tamanho de tela mobile -->
         <section class="section01">
             <div class="innerSection01">
 
                 <div class="containerSec01">
+                    <!--Imagem da cadeira no banner, estar como background-->
                     <div class="imgSec01">
                     </div>
 
 
                     <div class="group4806">
-                        <p class="supesaleText"><span class="supersaleSpan" SUPER>SUPER</span>SALE</p>
+                        <p class="supesaleText"><span class="supersaleSpan">SUPER</span>SALE</p>
                         <p class="itensText">Itens selecionados com até</p>
                         <p class="itensTextInglesh">Selected items up to</p>
                         <p class="percentageText"> 50%OFF</p>
                     </div>
                 </div>
 
-                <div class="containerSec01 mobileScreen ">
+                <!-- Esses dois conainers abaixo (mobileScreen)é para ser mostrada só na versão mobile compondo o carrossel -->
+                <div class="containerSec01 mobileScreen">
                     <div class="imgSec01">
                     </div>
 
 
                     <div class="group4806">
-                        <p class="supesaleText"><span class="supersaleSpan" SUPER>SUPER</span>SALE</p>
+                        <p class="supesaleText"><span class="supersaleSpan">SUPER</span>SALE</p>
                         <p class="itensText">Itens selecionados com até</p>
                         <p class="itensTextInglesh">Selected items up to</p>
                         <p class="percentageText"> 50%OFF</p>
@@ -1171,7 +1177,7 @@
             </div>
         </section>
 
-        <!-- Seção do carrossel -->
+        <!-- Seção do carrossel de produtos -->
         <section class="sectionCarrossel">
 
             <div class="group23821">
@@ -1188,7 +1194,7 @@
 
                 <div class="group1">
                     <p>Lançamentos</p>
-                    <button>Ver mais</button>
+                    <a href="#" aria-label="Link para info do produto">Ver mais</a>
                 </div>
 
                 <div class="frame12">
@@ -1225,7 +1231,15 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botao para abrir opcao de botões de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
+
+
                         </div>
 
 
@@ -1259,7 +1273,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1293,7 +1313,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1327,7 +1353,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1361,7 +1393,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1395,7 +1433,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1429,7 +1473,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1463,7 +1513,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1497,7 +1553,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1531,7 +1593,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1565,7 +1633,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1599,7 +1673,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1633,7 +1713,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1667,7 +1753,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1701,12 +1793,19 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
+                <!--Os três dots abaixo do carrossel marcando a movimentação do mesmo-->
                 <div class="group18057">
                     <div class="elipse elipse110"></div>
                     <div class="elipse elipse111"></div>
@@ -1716,8 +1815,8 @@
 
         </section>
 
-        <section class="sectionBanner01">
-            <div class="primeiroBanner">
+        <section class="sectionBanner02">
+            <div class="segundoBanner">
 
                 <div class="imgContainer">
                     <img src="./image/imgPrimeiroBanner/free-mug-mockup.png"
@@ -1816,8 +1915,8 @@
 
         </section>
 
-        <section class="sectionBanner01">
-            <div class="primeiroBanner">
+        <section class="sectionBanner02">
+            <div class="segundoBanner">
 
                 <div class="imgContainer">
                     <img src="./image/imgPrimeiroBanner/free-mug-mockup.png"
@@ -1864,17 +1963,17 @@
             <div class="group23821">
                 <!-- left arrow -->
                 <div class="group21090 arrow">
-                    <img src="./image/imgSectionCarroseel/iconmonstr-arrow-20.png" alt="Seta esquerda">
+                    <img src="./image/imgSectionCarroseel/iconmonstr-arrow-20.png" alt="Seta apontando para esquerda">
                 </div>
 
                 <!-- right arrow -->
                 <div class="group18119 arrow">
-                    <img src="./image/imgSectionCarroseel/iconmonstr-arrow-20-2.png" alt="seta direita">
+                    <img src="./image/imgSectionCarroseel/iconmonstr-arrow-20-2.png" alt="Seta apontando para direita">
                 </div>
 
                 <div class="group1">
                     <p>Lançamentos</p>
-                    <button>Ver mais</button>
+                    <a href="#" aria-label="Link para info do produto">Ver mais</a>
                 </div>
 
                 <div class="frame12">
@@ -1910,7 +2009,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1944,7 +2049,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -1978,7 +2089,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2012,7 +2129,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2046,7 +2169,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2080,7 +2209,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2114,7 +2249,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2148,7 +2289,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2182,7 +2329,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2216,7 +2369,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2250,7 +2409,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2284,7 +2449,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2318,7 +2489,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2352,7 +2529,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
 
@@ -2386,7 +2569,13 @@
 
                             </div>
 
-                            <button class="buttonMedium">Comprar</button>
+                            <button class="buttonCompra"
+                                aria-label="Botão para abrir opção de botão de compra">Comprar</button>
+                            <div class="buttonAddProduct">
+                                <i class="fa-solid fa-minus" aria-label="Botão negativo"></i>
+                                <p class="qtdProd">0</p>
+                                <i class="fa-solid fa-plus" aria-label="Botão positivo"></i>
+                            </div>
                         </div>
 
                     </div>
@@ -2423,7 +2612,8 @@
                             <p> Estou de acordo com a <span class="spanUnderline">Política de Privacidade</span></p>
                         </label>
 
-                        <button type="submit" class="btnSec08">Cadastrar</button>
+                        <button type="submit" class="btnSec08"
+                            aria-label="Botão para fazer o cadastro">Cadastrar</button>
                     </form>
                 </div>
             </div>
@@ -2567,6 +2757,7 @@
     <script src="./javaScript/searchcontent.js"></script>
     <script src="./javaScript/footer.js"></script>
     <script src="./javaScript/carrosselbanner01.js"></script>
+    <script src="./javaScript/btncomprascarrossel.js"></script>
 </body>
 
 </html>

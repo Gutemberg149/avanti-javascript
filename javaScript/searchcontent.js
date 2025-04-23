@@ -27,9 +27,9 @@ searchButton.addEventListener("click", function (event) {
   dropDownCategoria_.style.display = "none";
   dropDownDepartamento_.style.display = "none";
 
-  //Não estar especificado na atividade, mas acho que é interessante a div sumir de alguma forma.
-  //Tbm poderia ser através do mouseleave.
+  //A div que mostra o conteúdo procuracdo some em 4 segundos
   setTimeout(() => {
     productSearched.style.display = "none";
-  }, 6000);
+    inputText.value = "";
+  }, 4000);
 });

@@ -32,12 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicialização
   esconderTodosDepartamentos();
   esconderTodasCategorias();
+
   containers.forEach((container) => {
     container.style.display = "none";
   });
+
   containers[0].style.display = "flex";
 
-  // Tamno da tela
+  // Tamanho da tela
   const isMobile = window.innerWidth <= 390;
 
   // Comportamento do dropdown
